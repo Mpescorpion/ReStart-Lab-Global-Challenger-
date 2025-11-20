@@ -1,0 +1,26 @@
+/* responsive.css - mobile first adjustments */
+.hero-inner{ flex-direction:column; text-align:center; }
+.hero-media{ width:100%; margin-top:1rem; }
+.main-nav{ display:none; }
+.hamburger{ display:block; }
+ .brand .logo {
+    width: 120px;
+  }
+
+
+/* layout components default */
+.cards{ grid-template-columns: 1fr; }
+
+/* tablets and up */
+@media(min-width:768px){
+  .hero-inner{ flex-direction:row; text-align:left; align-items:center; }
+  .main-nav{ display:block; }
+  .hamburger{ display:none; }
+  .cards{ grid-template-columns: repeat(2, 1fr); }
+}
+
+/* desktop */
+@media(min-width:1100px){
+  .hero-title{ font-size:2.8rem; }
+  .cards{ grid-template-columns: repeat(3, 1fr); }
+}

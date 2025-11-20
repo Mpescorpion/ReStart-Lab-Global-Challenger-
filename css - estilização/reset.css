@@ -1,0 +1,19 @@
+/* reset.css */
+* { margin:0; padding:0; box-sizing:border-box; font-family: "Poppins", "Inter", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial; }
+html { scroll-behavior: smooth; }
+img { max-width:100%; display:block; }
+ul { list-style:none; }
+a { text-decoration:none; color:inherit; }
+button { cursor:pointer; border: none; background: none; font: inherit; }
+:root{
+  --blue-dark:#083A65;
+  --blue-light:#00B4D8;
+  --green:#3CCF4E;
+  --orange:#FB8C00;
+  --muted:#6B7280;
+  --bg:#F5F7FA;
+  --white:#FFFFFF;
+  --radius:12px;
+}
+body { background:var(--bg); color:var(--blue-dark); -webkit-font-smoothing:antialiased; -moz-osx-font-smoothing:grayscale; }
+.container{ width:94%; max-width:1200px; margin:0 auto; }

@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>ReStart Lab+ — Tecnologia que inclui. Oportunidade que transforma.</title>
+  <meta name="description" content="Plataforma de requalificação profissional inclusiva." />
+  <link rel="stylesheet" href="css - estilização/reset.css" />
+  <link rel="stylesheet" href="css - estilização/style_pages.css" />
+  <link rel="stylesheet" href="css - estilização/components.css" />
+  <link rel="stylesheet" href="css - estilização/responsividade.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="brand">
+        <img src="images_videos - images/logo.jpg" alt="ReStart Lab+ logo" class="logo">
+      </a>
+      <button id="btn-menu" class="hamburger" aria-label="Abrir menu">☰</button>
+      <nav id="main-nav" class="main-nav" aria-label="Menu principal">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="sobre.html">Sobre</a></li>
+          <li><a href="solucao1.html">Como funciona</a></li>
+          <li><a href="solucao2.html">Demonstração</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+          <li><a href="contato.html">Contato</a></li>
+          <li><a href="integrantes.html">Integrantes</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-inner">
+        <div class="hero-text">
+          <h1>ReStart Lab+</h1>
+          <p class="slogan">Tecnologia que inclui. Oportunidade que transforma.</p>
+          <p class="lead">Requalificação prática e inclusiva para profissionais que precisam se adaptar ao futuro do trabalho.</p>
+          <a class="btn primary" href="solucao1.html">Conheça nossa solução</a>
+        </div>
+        <div class="hero-media">
+          <img src="assets/img/hero.jpg" alt="Ilustração ReStart Lab+" />
+        </div>
+      </div>
+    </section>
+
+    <section class="features container">
+      <h2>O que oferecemos</h2>
+      <div class="cards">
+        <article class="card">
+          <h3>Tutor Virtual com IA</h3>
+          <p>Feedback em tempo real e trilhas personalizadas.</p>
+        </article>
+        <article class="card">
+          <h3>Modo Offline</h3>
+          <p>Conteúdo baixável para regiões com baixa conectividade.</p>
+        </article>
+        <article class="card">
+          <h3>Gamificação</h3>
+          <p>Desafios, badges e certificações digitais.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="callout container">
+      <h2>Quer começar?</h2>
+      <p>Faça o onboarding simples e descubra sua trilha de requalificação.</p>
+      <a class="btn secondary" href="contato.html">Fale com a equipe</a>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> ReStart Lab+. Tecnologia que inclui. Oportunidade que transforma.</p>
+      <nav class="footer-nav">
+        <a href="sobre.html">Sobre</a> · <a href="faq.html">FAQ</a> · <a href="contato.html">Contato</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="js - pages_integration/menu.js"></script>
+  <script src="js - pages_integration/hero.js"></script>
+  <script src="js - pages_integration/pages_animation.js"></script>
+  <script src="js - pages_integration/validation_forms.js"></script>
+  <script>
+    // pequeno script utilitário
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

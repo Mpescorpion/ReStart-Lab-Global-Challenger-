@@ -1,0 +1,274 @@
+/* ==========================
+   SOBRE — ESTILO GERAL
+   ========================== */
+
+section {
+  max-width: 1100px;
+  margin: 3.5rem auto;
+  padding: 2.5rem;
+  background: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.05);
+}
+
+section h2 {
+  font-size: 2.2rem;
+  color: var(--blue-dark);
+  font-weight: 700;
+  margin-bottom: 1.4rem;
+}
+
+section p {
+  line-height: 1.7;
+  font-size: 1.07rem;
+  color: #444;
+  margin-bottom: 1rem;
+}
+
+
+
+/* ==========================
+   HERO — SOBRE
+   ========================== */
+
+.hero-single {
+  position: relative;
+  width: 100%;
+  height: 70vh;
+  overflow: hidden;
+}
+
+.hero-single img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  filter: brightness(0.75);
+}
+
+/* novo texto mais claro */
+.hero-text {
+  position: absolute;
+  bottom: 18%;
+  left: 8%;
+  max-width: 650px;
+  color: #E6F1FF; /* NOVA COR — azul claro suave */
+}
+
+.hero-text h1 {
+  font-size: 3rem;
+  margin-bottom: .8rem;
+  text-shadow: 2px 2px 6px rgba(0,0,0,0.5);
+}
+
+.hero-text p {
+  font-size: 1.25rem;
+  color: #DCEAFF; /* parágrafo mais claro e legível */
+  text-shadow: 0 2px 6px rgba(0,0,0,0.5);
+}
+
+
+
+/* ==========================
+   CARDS — FUNCIONALIDADES
+   ========================== */
+
+.funcionalidades {
+  text-align: center;
+  padding: 2rem;
+  margin-top: 4rem;
+}
+
+.funcionalidades h2 {
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: var(--blue-dark);
+  margin-bottom: 2.5rem;
+}
+
+.cards-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 2rem;
+  justify-content: center;
+}
+
+/* CARD */
+.card {
+  background: #ffffff;
+  border-radius: 14px;
+  padding: 2rem 1.6rem;
+  text-align: left;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.06);
+  transition: 0.3s ease;
+  border-left: 6px solid var(--blue-light);
+  position: relative;
+  overflow: hidden;
+}
+
+/* animação antiga no hover (mantida) */
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 32px rgba(0,0,0,0.12);
+}
+
+
+/* ——— EFEITO DE GLOW LATERAL (scroll + hover) ——— */
+
+.card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -60px;
+  width: 180px;
+  height: 100%;
+
+  /* nova cor azul no glow */
+  background: rgba(0, 131, 255, 0.15);
+
+  transform: skewX(-22deg);
+  transition: 0.35s ease;
+  opacity: 0;
+}
+
+/* quando card entra na tela (classe adicionada pelo JS fade-up) */
+.card.visible::before {
+  left: 0;
+  opacity: 1;
+}
+
+/* hover também mantém o glow */
+.card:hover::before {
+  left: 0;
+  opacity: 1;
+}
+
+
+
+/* TÍTULOS */
+.card h3 {
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: var(--blue-dark);
+  margin-bottom: 0.6rem;
+}
+
+/* TEXTOS */
+.card p {
+  font-size: 1rem;
+  line-height: 1.55;
+  color: #555;
+}
+
+
+
+/* ==========================
+   CARDS — ÍCONES DECORATIVOS
+   ========================== */
+
+.card::after {
+  content: "📘";
+  position: absolute;
+  top: 16px;
+  right: 18px;
+  font-size: 2rem;
+  opacity: 0.25;
+}
+
+.card:nth-child(2)::after { content: "📶"; }
+.card:nth-child(3)::after { content: "📊"; }
+.card:nth-child(4)::after { content: "🧭"; }
+
+
+
+/* ==========================
+   ROADMAP
+   ========================== */
+
+.roadmap {
+  background: #f8fbff;
+}
+
+.roadmap h2 {
+  text-align: center;
+}
+
+.roadmap-timeline {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.roadmap-item {
+  background: #fff;
+  padding: 1.8rem 1.4rem;
+  border-radius: 14px;
+  box-shadow: 0 6px 22px rgba(0,0,0,0.06);
+  max-width: 280px;
+  transition: .3s ease;
+  border-top: 5px solid var(--blue-light);
+}
+
+.roadmap-item:hover {
+  transform: translateY(-5px);
+}
+
+
+
+/* ==========================
+   VALORES
+   ========================== */
+
+.ideas {
+  background: #ffffff;
+  padding: 2.5rem;
+}
+
+.ideas h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: var(--blue-dark);
+}
+
+.ideas ul {
+  max-width: 800px;
+  margin: auto;
+  padding-left: 1.2rem;
+  line-height: 1.7;
+  font-size: 1.1rem;
+}
+
+
+
+/* ==========================
+   RESPONSIVIDADE
+   ========================== */
+
+@media (max-width: 720px) {
+
+  .hero-single {
+    height: 46vh;
+  }
+
+  .hero-text h1 {
+    font-size: 1.9rem;
+  }
+
+  .hero-text p {
+    font-size: 1rem;
+  }
+
+  section {
+    padding: 1.7rem;
+    margin: 2.5rem auto;
+  }
+
+  section h2 {
+    font-size: 1.7rem;
+  }
+
+  .card {
+    padding: 1.6rem 1.4rem;
+  }
+}

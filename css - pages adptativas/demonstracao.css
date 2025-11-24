@@ -1,0 +1,176 @@
+/* HERO */
+.hero-single {
+  position: relative;
+  width: 100%;
+  height: 72vh; /* aumentei para hero real */
+  overflow: hidden;
+  border-radius: 10px;
+  margin-bottom: 2.8rem;
+}
+
+.hero-single img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  filter: brightness(0.68); /* deixa o texto legível */
+  display: block;
+}
+
+/* TEXTO DO HERO */
+.hero-text {
+  position: absolute;
+  left: 7%;
+  bottom: 16%;   /* CORRIGIDO — antes estava muito alto */
+  max-width: 650px;
+  z-index: 5;    /* ESSENCIAL */
+}
+
+/* Títulos do hero agora visíveis */
+.hero-text h1 {
+  color: #EAF4FF;           /* texto claro */
+  font-size: 2.8rem;
+  font-weight: 800;
+  text-shadow: 0 3px 10px rgba(0,0,0,0.55);
+  margin-bottom: .6rem;
+}
+
+.hero-text p {
+  color: #DCEAFF;           /* parágrafo claro */
+  font-size: 1.25rem;
+  max-width: 540px;
+  text-shadow: 0 2px 6px rgba(0,0,0,0.55);
+  margin-bottom: 1rem;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: .8rem;
+  margin-top: .5rem;
+}
+
+/* FIX PARA O MAIN NÃO FICAR GRUDADO / SUMIR */
+main.container {
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+  position: relative;
+  z-index: 1;
+}
+
+/* PAINEL SIMULADO */
+.panel-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.2rem;
+  margin-top: 1rem;
+}
+
+.panel.card {
+  padding: 1rem;
+  background: #1633a8;
+  border-radius: 12px;
+  box-shadow: 0 4px 14px rgba(0,0,0,0.06);
+}
+
+/* PROGRESS BAR */
+.progress-bar {
+  background: #eef7fb;
+  border-radius: 12px;
+  height: 14px;
+  overflow: hidden;
+  margin-top: .6rem;
+}
+
+.progress {
+  background: linear-gradient(90deg, #00B4D8, #3CCF4E);
+  height: 100%;
+  color: white;
+  font-weight: 700;
+  text-align: right;
+  padding-right: 8px;
+  line-height: 14px;
+  border-radius: 12px;
+}
+
+/* GRID DE CURSOS */
+.demo-grid {
+  margin-top: 1.6rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px,1fr));
+  gap: 1.4rem;
+}
+
+/* COURSE CARD */
+.course-card {
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.06);
+  transition: transform .28s ease, box-shadow .28s ease;
+}
+
+.course-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 28px rgba(0,0,0,0.12);
+}
+
+.course-card img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+}
+
+.card-body {
+  padding: 1.1rem;
+  display: flex;
+  flex-direction: column;
+  gap: .6rem;
+  flex: 1;
+}
+
+.meta {
+  color: var(--muted);
+  font-size: .95rem;
+}
+
+/* ACTIONS */
+.card-actions {
+  margin-top: auto;
+  display: flex;
+  gap: .6rem;
+}
+
+/* GUIAS */
+.guides-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px,1fr));
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.guide.card {
+  padding: 1rem;
+}
+
+/* RESPONSIVE */
+@media (max-width: 720px) {
+
+  .hero-single {
+    height: 46vh;
+  }
+
+  .hero-text {
+    bottom: 10%;
+    left: 6%;
+  }
+
+  .hero-text h1 {
+    font-size: 1.8rem;
+  }
+
+  .hero-text p {
+    font-size: 1rem;
+  }
+}

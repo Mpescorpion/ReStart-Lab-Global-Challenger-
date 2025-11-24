@@ -1,0 +1,27 @@
+/* cursos.css — estilo catálogo ReStart Clean (compatível com demonstracao.css) */
+
+.hero-single { height: 40vh; border-radius: 10px; overflow:hidden; margin-bottom:1.2rem; }
+.hero-single img { width:100%; height:100%; object-fit:cover; filter:brightness(0.85); }
+.hero-text { position:absolute; left:6%; top:18%; color:#E6F1FF; max-width:680px; }
+.hero-text h1 { color:var(--blue-dark); font-size:2.2rem; }
+.hero-text p { color:#2f536b; }
+
+.cards-container.demo-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px,1fr));
+  gap: 1.2rem;
+}
+
+.course-card { background:#fff; border-radius:12px; overflow:hidden; box-shadow:0 8px 24px rgba(0,0,0,0.06); transition:transform .28s ease; }
+.course-card img { height:140px; width:100%; object-fit:cover; }
+.card-body { padding:1rem; display:flex; flex-direction:column; gap:.6rem; }
+.meta { color:var(--muted); font-size:.95rem; }
+.card-actions { margin-top:auto; display:flex; gap:.6rem; }
+
+/* search row */
+.search-row input, .search-row select { width:100%; }
+
+/* responsive tweaks */
+@media (max-width:720px) {
+  .hero-single { height: 28vh; }
+}

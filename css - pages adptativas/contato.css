@@ -1,0 +1,105 @@
+    /* ======== CONTATO — PAGE STYLES ========= */
+
+.contact-section {
+  margin-top: 2rem;
+  padding: 2rem 1rem 4rem;
+}
+
+.contact-form {
+  background: var(--white);
+  padding: 2rem 2.2rem;
+  border-radius: var(--radius);
+  box-shadow: 0 6px 20px rgba(8,58,101,0.06);
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+.form-group {
+  margin-bottom: 1.2rem;
+  display: flex;
+  flex-direction: column;
+  gap: .4rem;
+}
+
+.contact-form label {
+  font-weight: 600;
+  color: var(--blue-dark);
+  font-size: .95rem;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: .85rem 1rem;
+  border: 1px solid rgba(8,58,101,0.12);
+  border-radius: var(--radius);
+  font-size: .95rem;
+  background: var(--bg);
+  transition: border-color .25s ease;
+  resize: none;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: var(--blue-light);
+  outline: none;
+}
+
+textarea {
+  min-height: 130px;
+}
+
+.btn-cta {
+  margin-top: 1rem;
+  padding: .9rem 1.6rem;
+  background: var(--blue-light);
+  color: var(--white);
+  border-radius: 10px;
+  border: none;
+  font-weight: 700;
+  font-size: .95rem;
+  transition: .25s ease;
+}
+
+.btn-cta:hover {
+  background: #0096c7;
+  transform: translateY(-2px);
+}
+
+/* Estilização - Hero */ 
+
+.hero-contato .hero-img {
+  width: 100%;
+  height: 56vh;
+  object-fit: cover;
+  filter: brightness(0.55);
+}
+
+.hero-contato .hero-text {
+  position: absolute;
+  top: 50%;
+  left: 6%;
+  transform: translateY(-50%);
+  color: #fff;
+  max-width: 620px;
+}
+
+/* ===== Ajuste para contato com HERO ===== */
+.contact-section {
+  margin-top: 1.4rem; /* antes era 2rem */
+}
+
+
+/* status message */
+.form-status {
+  margin-top: 1rem;
+  text-align: center;
+  font-weight: 600;
+  color: var(--blue-dark);
+}
+
+/* mobile fixes */
+@media(max-width: 600px) {
+  .contact-form {
+    padding: 1.5rem;
+  }
+}

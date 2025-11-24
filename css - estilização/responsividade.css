@@ -4,7 +4,10 @@
 .main-nav{ display:none; }
 .hamburger{ display:block; }
  .brand .logo {
-    width: 120px;
+  height: 120px;  
+  width:auto;
+  display: block; 
+
   }
 
 

@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Cursos — ReStart Lab+</title>
+
+  <link rel="stylesheet" href="css - estilização/reset.css" />
+  <link rel="stylesheet" href="css - estilização/style_pages.css" />
+  <link rel="stylesheet" href="css - estilização/components.css" />
+  <link rel="stylesheet" href="css - pages adptativas/cursos.css" />
+</head>
+<body>
+  <!-- HEADER (site padrão) -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="brand">
+        <img src="images_videos - images/logo.jpg" alt="ReStart Lab+" class="logo">
+      </a>
+
+      <button id="btn-menu" class="hamburger" aria-label="Abrir menu">☰</button>
+
+      <nav id="main-nav" class="main-nav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="sobre.html">Sobre</a></li>
+          <li><a href="demonstracao.html">Demonstração</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+          <li><a href="contato.html">Contato</a></li>
+          <li><a href="integrantes.html">Integrantes</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero-single">
+    <img src="assets/img/courses-hero.jpg" alt="Catálogo de cursos ReStart Lab+">
+    <div class="hero-text">
+      <h1>Catálogo de Cursos</h1>
+      <p>Encontre trilhas, cursos rápidos e formações pensadas para requalificação.</p>
+    </div>
+  </section>
+
+  <main class="container">
+    <section class="section fade-up">
+      <h2>Buscar cursos</h2>
+      <p>Use filtros para encontrar cursos por nível, duração ou trilha.</p>
+
+      <div class="search-row" style="display:flex; gap:.8rem; margin-top:1rem;">
+        <input type="search" placeholder="Pesquisar curso (ex.: Python, HTML, IA)" style="flex:1; padding:.8rem; border-radius:10px; border:1px solid rgba(8,58,101,0.08);" />
+        <select style="padding:.8rem; border-radius:10px; border:1px solid rgba(8,58,101,0.08);">
+          <option>Todos os níveis</option>
+          <option>Iniciante</option>
+          <option>Intermediário</option>
+          <option>Avançado</option>
+        </select>
+      </div>
+    </section>
+
+    <!-- grid de cursos -->
+    <section class="section">
+      <h2>Todos os cursos</h2>
+
+      <div class="cards-container demo-grid">
+        <!-- Real: HTML & CSS -->
+        <article class="card course-card fade-up">
+          <img src="images_videos - images/cursos - card1.jpg" alt="HTML & CSS do Zero">
+          <div class="card-body">
+            <h3>HTML & CSS do Zero</h3>
+            <p class="meta">Iniciante • 18h</p>
+            <p>Aprenda a estruturar páginas e usar estilos para construir sites simples e acessíveis.</p>
+            <div class="card-actions">
+              <a class="btn primary" href="#">Inscrever-se</a>
+              <a class="btn ghost" href="#">Saiba mais</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Real: Python -->
+        <article class="card course-card fade-up">
+          <img src="images_videos - images/cursos - card2.jpg" alt="Python para Iniciantes">
+          <div class="card-body">
+            <h3>Python para Iniciantes</h3>
+            <p class="meta">Iniciante • 24h</p>
+            <p>Conceitos de programação, lógica e pequenos projetos em Python.</p>
+            <div class="card-actions">
+              <a class="btn primary" href="#">Inscrever-se</a>
+              <a class="btn ghost" href="#">Saiba mais</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Fictício: Alfabetização Digital -->
+        <article class="card course-card fade-up">
+          <img src="images_videos - images/cursos - card3.jpg" alt="Alfabetização Digital">
+          <div class="card-body">
+            <h3>Alfabetização Digital</h3>
+            <p class="meta">Iniciante • 8h</p>
+            <p>Conceitos básicos de computação, navegação segura e uso de aplicativos essenciais.</p>
+            <div class="card-actions">
+              <a class="btn primary" href="#">Inscrever-se</a>
+              <a class="btn ghost" href="#">Saiba mais</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Fictício: IA Básica -->
+        <article class="card course-card fade-up">
+          <img src="images_videos - images/demonstração - card4.jpg" alt="IA Básica para Trabalhadores">
+          <div class="card-body">
+            <h3>IA Básica para Trabalhadores</h3>
+            <p class="meta">Básico • 12h</p>
+            <p>Introdução ao que é IA, riscos e oportunidades e uso prático em atividades rotineiras.</p>
+            <div class="card-actions">
+              <a class="btn primary" href="#">Inscrever-se</a>
+              <a class="btn ghost" href="#">Saiba mais</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- mais cursos… (replicar conforme necessário) -->
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer container">
+    <p>© <span id="year-courses"></span> ReStart Lab+</p>
+  </footer>
+
+  <script src="js/menu.js"></script>
+  <script src="js/pages_animation.js"></script>
+  <script>document.getElementById('year-courses').textContent = new Date().getFullYear();</script>
+
+    <!-- Botão Scroll to Top -->
+  <button id="scrollTopBtn" class="scroll-top" aria-label="Voltar ao topo">↑</button>
+  
+</body>
+</html>

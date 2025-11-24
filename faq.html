@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>FAQ — ReStart Lab+</title>
+  <link rel="stylesheet" href="css - estilização/reset.css" />
+  <link rel="stylesheet" href="css - estilização/style_pages.css" />
+  <link rel="stylesheet" href="css - estilização/components.css" />
+  <link rel="stylesheet" href="css - estilização/responsividade.css" />
+
+   <!-- estilo específico da página -->
+  <link rel="stylesheet" href="css - pages adptativas/faq.css" />
+</head>
+<body>
+  <!-- header/nav -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="brand"><img src="images_videos - images/logo.jpg " alt="Logo ReStart Lab+"  class ="logo"> ></a>
+      <button id="btn-menu" class="hamburger" aria-label="Abrir menu">☰</button>
+      <nav id="main-nav" class="main-nav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="sobre.html">Sobre</a></li>
+          <li><a href="demonstracao.html">Demonstração</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+          <li><a href="contato.html">Contato</a></li>
+          <li><a href="integrantes.html">Integrantes</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <h1>Perguntas Frequentes</h1>
+    <div class="faq">
+      <button class="faq-question">Como funciona o tutor virtual?</button>
+      <div class="faq-answer">O tutor usa regras e IA para sugerir trilhas e dar feedback prático.</div>
+
+      <button class="faq-question">Posso usar offline?</button>
+      <div class="faq-answer">Sim — o modo offline baixa trilhas selecionadas.</div>
+
+      <button class="faq-question">Como obtenho certificação?</button>
+      <div class="faq-answer">Ao completar os módulos e passar nas avaliações, você obtém um certificado digital.</div>
+    </div>
+  </main>
+
+  <footer class="site-footer container">
+    <p>© <span id="year4"></span> ReStart Lab+</p>
+  </footer>
+   
+  <script src="js - pages_integration/menu.js"></script>
+  <script src="js - pages_integration/hero.js"></script>
+  <script src="js - pages_integration/pages_animation.js"></script>
+  <script src="js - pages_integration/validation_forms.js"></script>
+
+  <script src="js - pages_integration/faq.js"></script>
+  <script>document.getElementById('year4').textContent = new Date().getFullYear();</script>
+  
+  <!-- Botão Scroll to Top -->
+  <button id="scrollTopBtn" class="scroll-top" aria-label="Voltar ao topo">↑</button>
+</body>
+</html>

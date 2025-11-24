@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Integrantes — ReStart Lab+</title>
+
+  <!-- estilos globais (já existentes no projeto) -->
+  <link rel="stylesheet" href="css - estilização/reset.css" />
+  <link rel="stylesheet" href="css - estilização/style_pages.css" />
+  <link rel="stylesheet" href="css - estilização/components.css" />
+  <link rel="stylesheet" href="css - estilização/responsividade.css" />
+
+  <!-- estilo específico da página -->
+  <link rel="stylesheet" href="css - pages adptativas/integrantes.css   " />
+</head>
+<body>
+  <!-- Header / Nav: reutilizar o mesmo markup do index -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="brand"><img src="images_videos - images/logo.jpg" alt="ReStart Lab+ logo" class="logo"></a>
+      <button id="btn-menu" class="hamburger" aria-label="Abrir menu">☰</button>
+      <nav id="main-nav" class="main-nav" aria-label="Menu principal">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="sobre.html">Sobre</a></li>
+          <li><a href="demonstracao.html">Demonstração</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+          <li><a href="contato.html">Contato</a></li>
+          <li><a href="integrantes.html" aria-current="page">Integrantes</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- HERO com imagem (image path vindo do upload) -->
+  <section class="hero-integrantes">
+    <img src="images_videos - images/hero page_integrante.jpg" alt="Nossa equipe - ReStart Lab+" class="hero-img">
+    <div class="hero-text fade-up">
+      <h1>Nossa Equipe</h1>
+      <p>Talentos que constroem o futuro do trabalho e da tecnologia — conheça quem faz o ReStart Lab+ acontecer.</p>
+    </div>
+  </section>
+
+  <main class="container">
+    <section class="integrantes-section">
+      <h2>Time de Desenvolvimento</h2>
+
+      <div class="cards-container">
+        <!-- Card 1 -->
+        <article class="card fade-up">
+          <img src="images_videos - images/Manuel Pedro_integrante.jpg" alt="Manuel Pedro">
+          <div class="card-body">
+            <h3>Manuel Pedro de Gouveia Neto</h3>
+            <p>Desenvolvedor Front-end</p>
+            <p class="rm">RM: 567458 — Turma: 1ºTDSPS</p>
+            <div class="links">
+              <a href="https://www.linkedin.com/in/manuel-pedro-gouveia-neto-89928638a/" target="_blank" rel="noopener">LinkedIn</a>
+              <a href="https://github.com/Mpescorpion" target="_blank" rel="noopener">GitHub</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Card 2 -->
+        <article class="card fade-up">
+          <img src="images_videos - images/Lucas shida_integrante.jpg" alt="Lucas Shida">
+          <div class="card-body">
+            <h3>Lucas Shida Rodrigues da Costa</h3>
+            <p>Desenvolvedor ChatDeveloper / Engineer Documentação</p>
+            <p class="rm">RM: 568194 — Turma: 1ºTDSPS</p>
+            <div class="links">
+              <a href="http://www.linkedin.com/in/lucas-shida" target="_blank" rel="noopener">LinkedIn</a>
+              <a href="https://github.com/LucasShida" target="_blank" rel="noopener">GitHub</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Card 3 -->
+        <article class="card fade-up">
+          <img src="images_videos - images/Eduardo Barbosa_integrante.jpg" alt="Eduardo Barbosa">
+          <div class="card-body">
+            <h3>Eduardo Barbosa da Silva</h3>
+            <p>Desenvolvedor Back-end</p>
+            <p class="rm">RM: 568327 — Turma: 1ºTDSPS</p>
+            <div class="links">
+              <a href="https://www.linkedin.com/in/eduardo-barbosa-9a2a8a37b" target="_blank" rel="noopener">LinkedIn</a>
+              <a href="https://github.com/Eduardo-web7" target="_blank" rel="noopener">GitHub</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Adicione mais cards conforme necessário -->
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer container">
+    <p>© <span id="yearTeam"></span> ReStart Lab+. Tecnologia que inclui. Oportunidade que transforma.</p>
+  </footer>
+
+  <!-- scripts -->
+  <script src="js - pages_integration/menu.js"></script>
+  <script src="js - pages_integration/hero.js"></script>
+  <script src="js - pages_integration/pages_animation.js"></script>
+  <script src="js - pages_integration/validation_forms.js"></script>
+  <script src="js - pages_integration/integrantes_animation.js"></script>
+  
+  <script>
+    document.getElementById('yearTeam').textContent = new Date().getFullYear();
+  </script>
+
+  <!-- Botão Scroll to Top -->
+ <button id="scrollTopBtn" class="scroll-top" aria-label="Voltar ao topo">↑</button>
+
+</body>
+</html>
